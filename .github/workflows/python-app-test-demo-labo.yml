@@ -30,6 +30,6 @@ jobs:
     - name: Display the name of the repository
       run: echo  actions/checkout@v3
     - name: Run the application test labotech
-      run: python main
+      run: python main.py
     - name: Test with pytest
       run: pytest
