@@ -27,6 +27,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Display the name of the repository
+      run: echo  actions/checkout@v3
     - name: Run the application test labotech
       run: python main
     - name: Test with pytest
